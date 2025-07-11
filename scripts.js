@@ -9,7 +9,7 @@
 
             // --- IMPORTANT: SET YOUR LAUNCH DATE HERE ---
             // Format: YYYY, Month (0-11), Day
-            const launchDate = new Date(2025, 6, 21); // July 21, 2025
+            const launchDate = new Date(2025, 6, 21); // July 27, 2025
 
             function setPageState(isPostLaunch) {
                 if (isPostLaunch) {
