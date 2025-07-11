@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register for your Pension | Hackney Council</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/@mdi/font@6.5.95/css/materialdesignicons.min.css" rel="stylesheet">
+<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <!-- DEV TOGGLE SWITCH -->
+    <div class="dev-toggle">
+        <label for="launch-toggle">Pre-launch View</label>
+        <input type="checkbox" id="launch-toggle">
+    </div>
+
+    <div class="header-hero-wrapper">
+        <main>
+            <section class="hero container">
+                <div id="countdown-timer" class="countdown-timer"></div>
+                <h1>Welcome, Hackney members<span class="hero-subtitle">to your digital pension future</span></h1>
+                <p>Access your Hackney Pension Fund information anytime, anywhere.</p>
+                <a href="#preregistration-area" id="hero-cta-button" class="cta-button">Take me to register my account</a>
+                <div class="trust-signals">
+                    <div class="trust-item">
+                        <span class="mdi mdi-lock"></span>
+                        <span>Simple, Safe, Secure</span>
+                    </div>
+                    <div class="trust-item">
+                        <span class="mdi mdi-check-circle-outline"></span>
+                        <span>Trusted by over 700,000 members</span>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <main>
+        <section class="benefits-section container animated-section">
+            <div class="section-title">
+                <h2>Register your PensionPoint account below</h2>
+                <p>It will transform how you manage your local government pension with instant access to all your key information 24/7</p>
+            </div>
+            <div class="benefits-grid">
+                <div class="benefit-card" style="--i:1;">
+                    <span class="mdi mdi-speedometer benefit-icon"></span>
+                    <h3>Instant access</h3>
+                    <p>To your pension information including your annual benefit statement.</p>
+                </div>
+                <div class="benefit-card" style="--i:2;">
+                    <span class="mdi mdi-calculator-variant-outline benefit-icon"></span>
+                    <h3>Calculate your pension</h3>
+                    <p>Plan your future with our retirement projection tools.</p>
+                </div>
+                <div class="benefit-card" style="--i:3;">
+                    <span class="mdi mdi-shield-check-outline benefit-icon"></span>
+                    <h3>Total security</h3>
+                    <p>Your data is protected by industry-standard security protocols.</p>
+                </div>
+            </div>
+            <div class="post-info-section">
+                <h3>No more waiting for post</h3>
+                <div class="post-info-grid">
+                    <div class="post-info-item">
+                        <span class="mdi mdi-clock-outline"></span>
+                        <span>24/7 document access</span>
+                    </div>
+                    <div class="post-info-item">
+                        <span class="mdi mdi-download"></span>
+                        <span>Download & print anytime</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="steps-section">
+            <div class="container animated-section">
+                <div class="section-title">
+                    <h2>Get started in 3 easy steps</h2>
+                    <p>Registration takes less than 5 minutes</p>
+                </div>
+                <div class="steps-timeline">
+                    <div class="step active">
+                        <div class="step-number">
+                            <span class="mdi mdi-check"></span>
+                        </div>
+                        <div class="step-title">Verify your identity</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-title">Create your account</div>
+                    </div>
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-title">Start browsing</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Pre-Registration Section -->
+        <section id="preregistration-area" class="registration-area">
+            <div class="container animated-section">
+                 <div class="prereg-container">
+                    <h3>Be the first to know!</h3>
+                    <p>Our new online portal is launching soon. Leave your email address below, and we'll notify you the moment you can register your account.</p>
+                    <div id="surveymonkey-widget">
+                        <!-- Paste your SurveyMonkey Widget Code Here -->
+                        <p>SurveyMonkey Widget Placeholder</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Final Registration Section (Initially Hidden) -->
+        <section id="final-registration-form" class="registration-area hidden">
+            <div class="container animated-section">
+                <div class="registration-layout">
+                    <div class="form-container">
+                        <form id="pension-reg-form" novalidate>
+                            <p>Enter you details below to activate your PensionPoint account.</p>
+                            <div class="form-group">
+                                <label for="username">Email address (used as your username)</label>
+                                <input type="text" id="username" name="username" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="dob">Date of birth</label>
+                                <input type="text" id="dob" name="dob" placeholder="DD/MM/YYYY" onfocus="(this.type='date')" onblur="(this.type='text')" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="mobile">Mobile number</label>
+                                <input type="tel" id="mobile" name="mobile" required>
+                            </div>
+                             <div class="form-group">
+                                <label for="confirm-mobile">Confirm mobile number</label>
+                                <input type="tel" id="confirm-mobile" name="confirm-mobile" required>
+                            </div>
+                            
+                            <button type="submit" class="cta-button">Submit</button>
+                        </form>
+                    </div>
+                    <aside class="help-sidebar">
+                        <div class="why-register">
+                            <h4>Why register?</h4>
+                            <ul>
+                                <li>Instantly view your pension information</li>
+                                <li>Calculate your personal pension benefits</li>
+                                <li>View your documents online</li>
+                                <li>Update your personal details</li>
+                                <li>Securely message our support team</li>
+                            </ul>
+                        </div>
+                        <div class="video-help">
+                            <h4>Need help registering?</h4>
+                            <p>Watch our video on how to register.</p>
+                            <div class="video-embed-container">
+                                <iframe src="https://www.youtube.com/embed/DwT0a2OOBFw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            </div>
+                            <div class="struggling-link-container">
+                                <strong class="struggling-text">Still struggling?</strong>
+                                <a href="#faq" class="faq-link">View FAQ below</a>
+                            </div>
+                        </div>
+                    </aside>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section container animated-section">
+            <h2 class="section-title">What our existing members say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>The new online system is so easy to use. I was able to find my latest statement in seconds. A huge improvement!</p>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <div class="reviewer-info">
+                        <span class="reviewer-name">Steve</span>
+                        <span class="reviewer-fund">Hertfordshire PF</span>
+                    </div>
+                    <span class="mdi mdi-format-quote-close testimonial-quote-mark"></span>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>Registering was quick and painless. It's reassuring to see all my pension details in one place, clearly laid out.</p>
+                        <div class="stars">★★★★★</div>
+                    </div>
+                    <div class="reviewer-info">
+                        <span class="reviewer-name">Jane</span>
+                        <span class="reviewer-fund">Hackney PF</span>
+                    </div>
+                    <span class="mdi mdi-format-quote-close testimonial-quote-mark"></span>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq-section container animated-section">
+            <h2 class="section-title">Frequently asked questions</h2>
+            <div class="faq-list">
+                <div class="faq-item">
+                    <div class="faq-question">What can I do if I'm struggling to register? <span class="plus-icon mdi mdi-plus"></span></div>
+                    <div class="faq-answer">
+                        <p>If you're having trouble, please double-check the details you are entering. If you're still stuck, you can watch our help video on this page or contact our support team for assistance.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What can I do if I'm struggling to register? <span class="plus-icon mdi mdi-plus"></span></div>
+                    <div class="faq-answer">
+                        <p>You will need your Pension Reference Number (which can be found on correspondence from us), your date of birth, and a valid email address and mobile number.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">What can I do if I'm struggling to register? <span class="plus-icon mdi mdi-plus"></span></div>
+                    <div class="faq-answer">
+                        <p>Yes. We use multi-factor authentication and industry-standard encryption to ensure your personal and financial information is kept safe and secure at all times.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+<script src="./scripts.js"></script>
+</body>
+</html>
